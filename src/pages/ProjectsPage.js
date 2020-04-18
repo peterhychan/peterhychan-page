@@ -1,5 +1,5 @@
 import React from "react";
-import Project from "../components/Project";
+import SingleProject from "../components/SingleProject";
 
 const categories = [
   "All",
@@ -29,21 +29,54 @@ const ProjectsPage = () => {
           </div>
         ))}
       </nav>
+      <div className="flex justify-around flex-wrap py-4">
+        <SingleProject
+          name="Web"
+          description="HTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML Page"
+          stacks={["HTML", "CSS"]}
+          category="Others"
+          deployedURL="http://google.com"
+          sourceURL="http://github.com/"
+        />
+        <SingleProject
+          name="Web"
+          description="HTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML Page"
+          stacks={["HTML", "CSS"]}
+          category="Others"
+        />
+        <SingleProject
+          name="Web"
+          description="HTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML Page"
+          stacks={["HTML", "CSS"]}
+          category="Others"
+        />
+        <SingleProject
+          name="Web"
+          description="HTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML Page"
+          stacks={["HTML", "CSS"]}
+          category="Others"
+        />
+      </div>
       <div className="flex justify-around flex-wrap">
-        <Project
+        <SingleProject
           name="Web"
           description="HTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML Page"
           stacks={["HTML", "CSS"]}
-          category="Web Dev"
-          projectImage="https://source.unsplash.com/user/erondu"
+          category="Others"
         />
-        <Project
+        <SingleProject
           name="Web"
           description="HTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML Page"
           stacks={["HTML", "CSS"]}
-          category="Frontend"
+          category="Others"
         />
-        <Project
+        <SingleProject
+          name="Web"
+          description="HTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML Page"
+          stacks={["HTML", "CSS"]}
+          category="Others"
+        />
+        <SingleProject
           name="Web"
           description="HTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML Page"
           stacks={["HTML", "CSS"]}
