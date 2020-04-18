@@ -1,6 +1,8 @@
 import React from "react";
 import SingleProject from "../components/SingleProject";
 
+import data from "../utils/data";
+
 const categories = [
   "All",
   "WebDev",
@@ -22,7 +24,7 @@ const ProjectsPage = () => {
       <nav className="flex justify-center flex-wrap mt-4 mb-8 text-white">
         {categories.map((category) => (
           <div
-            className="h-8 mr-2 px-3 py-1 bg-blue-400 hover:bg-blue-600 text-center cursor-pointer"
+            className="h-8 mr-2 px-3 py-1 bg-blue-400 text-center"
             key={category}
           >
             {category}
@@ -30,58 +32,18 @@ const ProjectsPage = () => {
         ))}
       </nav>
       <div className="flex justify-around flex-wrap py-4">
-        <SingleProject
-          name="Web"
-          description="HTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML Page"
-          stacks={["HTML", "CSS"]}
-          category="Others"
-          deployedURL="http://google.com"
-          sourceURL="http://github.com/"
-        />
-        <SingleProject
-          name="Web"
-          description="HTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML Page"
-          stacks={["HTML", "CSS"]}
-          category="Others"
-        />
-        <SingleProject
-          name="Web"
-          description="HTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML Page"
-          stacks={["HTML", "CSS"]}
-          category="Others"
-        />
-        <SingleProject
-          name="Web"
-          description="HTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML Page"
-          stacks={["HTML", "CSS"]}
-          category="Others"
-        />
-      </div>
-      <div className="flex justify-around flex-wrap">
-        <SingleProject
-          name="Web"
-          description="HTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML Page"
-          stacks={["HTML", "CSS"]}
-          category="Others"
-        />
-        <SingleProject
-          name="Web"
-          description="HTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML Page"
-          stacks={["HTML", "CSS"]}
-          category="Others"
-        />
-        <SingleProject
-          name="Web"
-          description="HTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML Page"
-          stacks={["HTML", "CSS"]}
-          category="Others"
-        />
-        <SingleProject
-          name="Web"
-          description="HTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML PageHTML Page"
-          stacks={["HTML", "CSS"]}
-          category="Others"
-        />
+        {data.map((e, index) => {
+          return (
+            <SingleProject
+              key={index}
+              name={e.name}
+              description={e.description}
+              stacks={e.stacks}
+              category={e.category[1]}
+              deployedURL={e.deployedURL}
+            />
+          );
+        })}
       </div>
     </div>
   );
