@@ -35,8 +35,11 @@ const ProjectsPage = () => {
         PROJECTS
       </div>
       <div className="p-2 text-center text-lg text-gray-700">
-        I work on various side-projects.
-      </div>
+        "Talk is cheap. Show me the code." - Linus Torvalds
+      </div>{" "}
+      <div className="p-2 text-center text-lg text-gray-700">
+        "No problem." - Me
+      </div>{" "}
       <nav className="flex justify-center flex-wrap mt-4 mb-8 text-white">
         {Categories.map((category) => (
           <div

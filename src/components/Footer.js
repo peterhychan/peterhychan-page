@@ -7,8 +7,8 @@ const Footer = () => (
         <div className="my-6 ml-3 text-xl font-semibold">ABOUT ME</div>
         <p className="p-3 text-gray-400">
           Peter Chan is a software engineer who lives in San Francisco,
-          California. His speciality is full stack application development. He
-          speaks fluent English, Mandarin and Cantonese. Thanks for visiting !
+          California. His specialty is full-stack application development. He
+          speaks fluent English, Mandarin, and Cantonese. Thanks for visiting!
         </p>
       </div>
 

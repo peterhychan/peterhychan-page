@@ -17,8 +17,8 @@ const AboutPage = () => (
           IT Support
         </p>
         <p className="p-2 text-sm text-gray-700">
-          I have good foundamentals of IT Support by earning a certificate of IT
-          Support by Google.
+          I have good fundamentals of IT Support by earning an IT Support
+          Certificate by Google.
         </p>
       </div>
       <div className="relative w-48 h-64 m-5 bg-white shadow-lg">
@@ -29,8 +29,8 @@ const AboutPage = () => (
           Frontend Dev
         </p>
         <p className="p-2 text-sm text-gray-700">
-          I have experience in HTML, CSS, JavaScript, as well as the various
-          frameworks: React.js, Angular.js, Vue.js, Svelte.js
+          I have experience in HTML, CSS, JavaScript, and various front-end
+          frameworks: React.js, Angular.js, Vue.js, Svelte.js .
         </p>
       </div>
       <div className="relative w-48 h-64 m-5 bg-white shadow-lg">
@@ -42,7 +42,7 @@ const AboutPage = () => (
         </p>
         <p className="p-2 text-sm text-gray-700">
           I have experience in Node.js, Python as well as the various
-          frameworks: Express.js
+          frameworks: Express.js .
         </p>
       </div>
       <div className="relative w-48 h-64 m-5 bg-white shadow-lg">

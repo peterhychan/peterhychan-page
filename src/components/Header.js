@@ -7,7 +7,7 @@ const Header = () => (
       <span className="ml-1 text-3xl text-blue-200 font-semibold">
         {" "}
         <a
-          className="text-white hover:text-blue-300"
+          className="text-white"
           href="https://my-dev-note.hoychanan.now.sh/"
           target="_blank"
           rel="noopener noreferrer"
