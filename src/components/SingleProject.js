@@ -14,7 +14,7 @@ import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: 325,
+    maxWidth: 375,
     marginTop: 25,
   },
   media: {
@@ -71,7 +71,7 @@ function RecipeReviewCard({
           {stacks
             ? stacks.map((stack) => (
                 <span
-                  className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2"
+                  className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 m-2"
                   key={stack}
                 >
                   {stack}

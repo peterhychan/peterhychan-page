@@ -65,6 +65,7 @@ const ProjectsPage = () => {
               stacks={e.stacks}
               category={e.category[1]}
               deployedURL={e.deployedURL}
+              projectImage={e.projectImage}
             />
           );
         })}
