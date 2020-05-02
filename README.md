@@ -16,4 +16,4 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 ### Deployment
 
-The page is deployed on [now.sh](https://peterhychan.now.sh).
+The page is deployed on [now.sh](https://peterhychan.hoychanan.now.sh/).
