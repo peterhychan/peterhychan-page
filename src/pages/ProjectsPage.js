@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import SingleProject from "../components/SingleProject";
 
-//import Data from "../utils/data";
-
 const Categories = [
   "All",
   "WebDev",
