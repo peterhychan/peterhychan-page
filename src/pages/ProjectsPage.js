@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import SingleProject from "../components/SingleProject";
+import Data from "../utils/data.js";
 
 const Categories = [
   "All",
@@ -10,28 +11,13 @@ const Categories = [
   "Others",
 ];
 
-let Info = [];
-
 const ProjectsPage = () => {
   const [projectsShown, setProjectsShownAndCategory] = useState({
-    projectsArray: [...Info],
+    projectsArray: [...Data],
     category: "All",
   });
-
-  useEffect(() => {
-    fetch("https://personal-project-list.now.sh/")
-      .then((res) => res.json())
-      .then((json) => {
-        Info = [...json];
-        setProjectsShownAndCategory({
-          projectsArray: [...Info],
-          category: "All",
-        });
-      });
-  }, []);
-
   const changeCategory = (category) => {
-    const ProjectsShown = Info.filter(
+    const ProjectsShown = Data.filter(
       (e) => e.category[1] === category || e.category[0] === category
     );
     setProjectsShownAndCategory({
@@ -68,6 +54,7 @@ const ProjectsPage = () => {
         ))}
       </nav>
       <div className="flex justify-around flex-wrap py-4">
+        {projectsShown.projectsArray.length === 0 ? "Loading..." : null}
         {projectsShown.projectsArray.map((e, index) => {
           return (
             <SingleProject
