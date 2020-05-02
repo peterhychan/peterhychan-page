@@ -1,7 +1,9 @@
 # Personal Portfolio (New)
 
 ## About
-This is the source code of Ho Yeung (Peter)'s current [Personal Portfolio page](https://peterhychan-page.hoychanan.now.sh/). 
+This is the source code of Ho Yeung (Peter)'s current [Personal Portfolio page](https://peterhychan-page.hoychanan.now.sh/).
+
+### This app is upgraded from my previous version of [personal portfolio](https://github.com/peterhychan/peterhychan-page-fetch).
 
 ### How it works
 This application fetch projects information from static info inside the `utils` folder of the project. The application is written in React.js, which the state management is done by React Hooks (useState), and styled by TailwindCSS. 
