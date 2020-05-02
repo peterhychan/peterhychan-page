@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import SingleProject from "../components/SingleProject";
 
-import Data from "../utils/data";
+//import Data from "../utils/data";
 
 const Categories = [
   "All",
@@ -12,14 +12,28 @@ const Categories = [
   "Others",
 ];
 
+let Info = [];
+
 const ProjectsPage = () => {
   const [projectsShown, setProjectsShownAndCategory] = useState({
-    projectsArray: [...Data],
+    projectsArray: [...Info],
     category: "All",
   });
 
+  useEffect(() => {
+    fetch("https://personal-project-list.now.sh/")
+      .then((res) => res.json())
+      .then((json) => {
+        Info = [...json];
+        setProjectsShownAndCategory({
+          projectsArray: [...Info],
+          category: "All",
+        });
+      });
+  }, []);
+
   const changeCategory = (category) => {
-    const ProjectsShown = Data.filter(
+    const ProjectsShown = Info.filter(
       (e) => e.category[1] === category || e.category[0] === category
     );
     setProjectsShownAndCategory({
