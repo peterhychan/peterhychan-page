@@ -1,4 +1,5 @@
 import React from "react";
+import FORMSPARK from "../config";
 
 const Footer = () => (
   <div className="w-full bg-blue-900">
@@ -46,16 +47,22 @@ const Footer = () => (
       </div>
       <div className="w-full md:w-1/3 p5">
         <div className="mt-6 text-xl font-semibold">MESSAGE ME</div>
-        <form className="w-4/5 mx-auto mt-2 px-6 pt-6 pb-4 rounded">
+        <form
+          className="w-4/5 mx-auto mt-2 px-6 pt-6 pb-4 rounded"
+          action={FORMSPARK}
+          target="_self"
+        >
           <div className="flex items-center mb-4">
             <input
               className="w-24 h-10 p-2 border-b border-blue-800 bg-blue-900 text-white"
               type="text"
+              name="subject"
               placeholder="Name"
             />
             <input
               className="w-full h-10 p-2 border-b border-blue-800 bg-blue-900 text-white"
               type="text"
+              name="email"
               placeholder="Email"
             />
           </div>
@@ -63,13 +70,14 @@ const Footer = () => (
           <div className="mb-6">
             <textarea
               className="w-full h-20 px-2 pt-2 border-b-2 border-blue-800 bg-blue-900 text-white"
+              name="message"
               placeholder="Message"
             ></textarea>
           </div>
           <div className="flex justify-between items-center">
             <button
               className="w-full py-2 px-4 rounded bg-blue-400 hover:bg-green-400 text-white font-bold"
-              type="button"
+              type="submit"
             >
               SEND
             </button>
