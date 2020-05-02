@@ -1,5 +1,4 @@
 import React from "react";
-import FORMSPARK from "../config";
 
 const Footer = () => (
   <div className="w-full bg-blue-900">
