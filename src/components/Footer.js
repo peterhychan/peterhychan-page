@@ -49,7 +49,7 @@ const Footer = () => (
         <div className="mt-6 text-xl font-semibold">MESSAGE ME</div>
         <form
           className="w-4/5 mx-auto mt-2 px-6 pt-6 pb-4 rounded"
-          action={FORMSPARK}
+          action="https://submit-form.com/q6kS3fLZKNDEbWD3DFBlZ"
           target="_self"
         >
           <div className="flex items-center mb-4">
