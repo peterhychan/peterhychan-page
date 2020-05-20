@@ -1,7 +1,7 @@
 # Personal Portfolio (New)
 
 ## About
-This is the source code of Ho Yeung (Peter)'s current [Personal Portfolio page](https://peterhychan-page.hoychanan.now.sh/).
+This is the source code of Ho Yeung (Peter)'s current [Personal Portfolio page](https://peterhychan-portfolio.now.sh/).
 
 ### This app is upgraded from my previous version of [personal portfolio](https://github.com/peterhychan/peterhychan-page-fetch).
 
