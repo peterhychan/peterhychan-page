@@ -81,6 +81,16 @@ const projects = [
     sourceURL: "https://github.com/peterhychan/my_dev_note",
     projectImage: "https://upload.cc/i1/2020/04/29/XCifpt.png",
   },
+  {
+    name: "Weather App with Monetization Feature",
+    description:
+      "Created a weather app in which users can access premium content with the Monetization plugin installed on browsers. The application is written in React.js, and styled by CSS along with Bootstrap 4. The realtime weather info is fetched from the OpenWeather API.",
+    stacks: ["React.js", "Bootstrap 4"],
+    category: ["All", "Frontend"],
+    deployedURL: "https://mt-weatherapp-2020.hoychanan.now.sh/",
+    sourceURL: "https://github.com/peterhychan/mt-weatherapp-2020",
+    projectImage: "https://upload.cc/i1/2020/05/20/1NjWZQ.png",
+  },
 ];
 
 export default projects;
